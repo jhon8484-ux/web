@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2019/09/12/15/21/resort-4471852_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9eff1;
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ffa500;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Item */
+.modal-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+}
+
+.modal-item h4 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;  /* Ensure the text color is visible */
+}
+
+.modal-item p {
+    font-size: 16px;
+    color: #666;  /* Ensure the paragraph text is visible */
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+/* Estilos para el pie de página */
+footer {
+    background-color:transparent;  /* Fondo oscuro para el pie de página */
+    color: white;            /* Texto en color blanco */
+    padding: 20px;           /* Espaciado alrededor del pie de página */
+    text-align: center;      /* Centra el contenido */
+    position:fixed;
+    bottom: 0;
+    width: 100%;             /* Asegura que el pie ocupe todo el ancho de la página */
+    font-size: 1rem;         /* Tamaño de fuente moderado */
+}
+
+footer .contact-info {
+    max-width: 800px;        /* Ancho máximo para el contenedor */
+    margin: 0 auto;          /* Centra el contenedor */
+}
+
+footer h3 {
+    font-size: 1.5rem;       /* Tamaño del encabezado */
+    margin-bottom: 15px;     /* Espaciado debajo del encabezado */
+}
+
+footer p {
+    margin: 8px 0;           /* Espaciado entre las líneas */
+}
+
+footer a {
+    color: #ffcc00;          /* Color para los enlaces (puedes cambiarlo) */
+    text-decoration: none;   /* Sin subrayado en el enlace */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}

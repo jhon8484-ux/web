@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Delights</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="javascript:void(0);" onclick="openModal('nosotros')">Nosotros</a></li>
+            <li><a href="javascript:void(0);" onclick="openModal('pago')">Pago Online</a></li>
+            <li><a href="javascript:void(0);" onclick="openModal('otros_servicios')">Otros Servicios</a></li>
+            <li><a href="javascript:void(0);" onclick="openModal('registro')">Regístrate</a></li>
+            <li><a href="javascript:void(0);" onclick="openModal('iniciar_sesion')">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- Fondo de la página -->
+    <div class="background-image">
+        <div class="container">
+            
+            <!-- Título del restaurante -->
+            <h1 class="restaurant-title">My Delights-Restaurant</h1>
+            
+            
+            
+            <!-- Botones -->
+            <div class="buttons-container">
+                <button class="btn" onclick="openModal('platos_a_la_carta')">Platos a la Carta</button>
+                <button class="btn" onclick="openModal('menu_del_dia')">Menú del Día</button>
+                <button class="btn" onclick="openModal('bebidas')">Bebidas</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Platos a la Carta -->
+    <div id="platos_a_la_carta" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('platos_a_la_carta')">&times;</span>
+            <h3>Platos a la Carta</h3>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2019/06/30/18/15/steak-4308529_1280.jpg" alt="Churrasco">
+                <h4>Churrasco</h4>
+                <p>Precio: $20,000</p>
+            </div>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2020/06/20/17/44/food-5321841_1280.jpg" alt="Bandeja Paisa">
+                <h4>Bandeja Paisa</h4>
+                <p>Precio: $18,000</p>
+            </div>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2019/07/01/03/47/seafood-4309134_1280.jpg" alt="Cazuela de Mariscos">
+                <h4>Cazuela de Mariscos</h4>
+                <p>Precio: $22,000</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Menú del Día -->
+    <div id="menu_del_dia" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('menu_del_dia')">&times;</span>
+            <h3>Menú del Día</h3>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2017/07/25/17/04/soup-2538888_1280.jpg" alt="Sopa del Día">
+                <h4>Sopa del Día-crema de pollo</h4>
+                <p>Precio: $15,000</p>
+            </div>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2018/05/01/14/13/vegetable-3365678_1280.jpg" alt="Principio">
+                <h4>Principio-habichuela</h4>
+                <p>Precio: $17,000</p>
+            </div>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2017/02/17/10/45/fish-2073798_1280.jpg" alt="Proteína">
+                <h4>Proteína-salmon</h4>
+                <p>Precio: $38,000</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bebidas -->
+    <div id="bebidas" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('bebidas')">&times;</span>
+            <h3>Bebidas</h3>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2021/08/24/04/52/cocktails-6569488_1280.jpg" alt="Jugo Natural">
+                <h4>Jugo Natural</h4>
+                <p>Precio: $13,000</p>
+            </div>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2017/01/21/21/15/beer-1998293_1280.jpg" alt="Refresco">
+                <h4>cerveza</h4>
+                <p>Precio: $8000</p>
+            </div>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2017/12/13/22/02/bottle-3017833_1280.jpg" alt="Agua Mineral">
+                <h4>Agua Mineral</h4>
+                <p>Precio: $5000</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+    <!-- Modal de Nosotros -->
+    <div id="nosotros" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('nosotros')">&times;</span>
+            <h3>Nosotros</h3>
+            <p>Bienvenido a My Delights, el restaurante donde la calidad y el sabor se unen para ofrecerte una experiencia única.</p>
+        </div>
+    </div>
+
+    <!-- Modal de Pago Online -->
+    <div id="pago" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('pago')">&times;</span>
+            <h3>Pago Online</h3>
+        
+        </div>
+    </div>
+
+    <!-- Modal de Otros Servicios -->
+    <div id="otros_servicios" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('otros_servicios')">&times;</span>
+            <h3>Otros Servicios</h3>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2020/11/04/19/46/table-setting-5713429_1280.jpg" alt="Banquetes">
+                <h4>Banquetes</h4>
+                <p>Organización de banquetes para cualquier ocasión especial.</p>
+            </div>
+            <div class="modal-item">
+                <img src="https://media.istockphoto.com/id/166064460/photo/waiter-serving-a-buffet-table.jpg?s=1024x1024&w=is&k=20&c=dVKxhAg3T2osr4Awt9RiIwIgJr_UEOLupCIzoLDz0tI=" alt="Buffets">
+                <h4>Buffets</h4>
+                <p>Buffets completos para grupos grandes, con diversas opciones.</p>
+            </div>
+            <div class="modal-item">
+                <img src="https://media.istockphoto.com/id/1443317020/photo/business-people-at-banquet.jpg?s=1024x1024&w=is&k=20&c=SV8frCP8xMW0ifepZPfcC5lWz7NHe1rupuy3Cy5-Lws=" alt="Eventos Familiares">
+                <h4>Eventos Familiares</h4>
+                <p>Servicios de catering para reuniones familiares y celebraciones.</p>
+            </div>
+            <div class="modal-item">
+                <img src="https://cdn.pixabay.com/photo/2014/09/20/13/55/banquet-453799_1280.jpg" alt="Eventos Empresariales">
+                <h4>Eventos Empresariales</h4>
+                <p>Soluciones para eventos corporativos y empresariales.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Registro -->
+    <div id="registro" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('registro')">&times;</span>
+            <h3>Regístrate</h3>
+            <form id="registration-form">
+                <label for="full-name">Nombre y Apellido:</label>
+                <input type="text" id="full-name" name="full-name" required><br><br>
+
+                <label for="sex">Sexo:</label>
+                <select id="sex" name="sex" required>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                </select><br><br>
+
+                <label for="dob">Fecha de Nacimiento:</label>
+                <input type="date" id="dob" name="dob" required><br><br>
+
+                <label for="address">Dirección de Residencia:</label>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="phone">Teléfono Celular:</label>
+                <input type="tel" id="phone" name="phone" required><br><br>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+<footer>
+    <div class="contact-info">
+        <h3>Información de Contacto</h3>
+        <p><strong>Dirección:</strong> Calle 200 7 24</p>
+        <p><strong>Teléfono:</strong> 2334455 - 2336677</p>
+        <p><strong>Horario:</strong> Lunes a domingo, Las 24 horas</p>
+        <p><strong>Email:</strong> <a href="mailto:mydelights@yahoo.com">mydelights@yahoo.com</a></p>
+        <p><strong>Ubicación:</strong> Bogotá, Colombia</p>
+        <p><strong>Jhon Sanchez-Autor
+    </div>
+</footer>
+
+
+
+
